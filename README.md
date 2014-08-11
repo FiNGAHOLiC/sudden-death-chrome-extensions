@@ -2,4 +2,4 @@
 Chrome Extentions for generating Sudden-Death AA (using papix's Kuso API).
 
 ## Thanks
-[Kuso API](https:/github.com/papix/KusoAPI/) by [papix](https:/github.com/papix/)
+[Kuso API](https://github.com/papix/KusoAPI/) by [papix](https://github.com/papix/)
