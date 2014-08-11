@@ -1,106 +1,106 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-  -webkit-appearance: none;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    -webkit-appearance: none;
 }
 
 body {
-  background: #fafafa;
-  padding: 20px;
-  width: 340px;
+    background: #fafafa;
+    padding: 20px;
+    width: 340px;
 }
 
 .mod-h1 {
-  color: #999;
-  font-size: 14px;
+    color: #999;
+    font-size: 14px;
 }
 
 .mod-h1 strong {
-  color: #000;
+    color: #000;
 }
 
 .mod-sudden_death {
-  margin-top: 10px;
+    margin-top: 10px;
 }
 
 .mod-sudden_death-input {
-  border: 1px solid #cccccc;
-  border-radius: 4px 0 0 4px;
-  border-right: 0;
-  display: inline-block;
-  font-size: 14px;
-  line-height: 18px;
-  outline: 0;
-  padding: 10px;
-  width: 200px;
+    border: 1px solid #cccccc;
+    border-radius: 4px 0 0 4px;
+    border-right: 0;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 18px;
+    outline: 0;
+    padding: 10px;
+    width: 200px;
 }
 
 .mod-sudden_death-submit {
-  background-image: linear-gradient(to bottom, #f9f9f9, #e6e6e6);
-  border: 1px solid #cccccc;
-  border-radius: 0 4px 4px 0;
-  cursor: pointer;
-  display: inline-block;
-  height: 40px;
-  outline: 0;
-  position: relative;
-  vertical-align: top;
-  width: 100px;
-  z-index: 1;
+    background-image: linear-gradient(to bottom, #f9f9f9, #e6e6e6);
+    border: 1px solid #cccccc;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    display: inline-block;
+    height: 40px;
+    outline: 0;
+    position: relative;
+    vertical-align: top;
+    width: 100px;
+    z-index: 1;
 }
 
 .mod-sudden_death-label {
-  color: #000;
-  font-size: 14px;
-  line-height: 38px;
-  transition: all .1s linear;
+    color: #000;
+    font-size: 14px;
+    line-height: 38px;
+    transition: all .1s linear;
 }
 
 .mod-sudden_death-loading {
-  background: transparent url(../img/loading.gif);
-  height: 16px;
-  left: 50%;
-  margin-left: -8px;
-  margin-top: -8px;
-  opacity: 0;
-  position: absolute;
-  top: 50%;
-  transform: scale(0);
-  transition: all .1s linear;
-  width: 16px;
-  z-index: 1;
+    background: transparent url(../img/loading.gif);
+    height: 16px;
+    left: 50%;
+    margin-left: -8px;
+    margin-top: -8px;
+    opacity: 0;
+    position: absolute;
+    top: 50%;
+    transform: scale(0);
+    transition: all .1s linear;
+    width: 16px;
+    z-index: 1;
 }
 
 .mod-sudden_death-submit:hover {
-  background-image: linear-gradient(to bottom, #ffffff, #eaeaea);
+    background-image: linear-gradient(to bottom, #ffffff, #eaeaea);
 }
 
 .mod-sudden_death-submit[disabled] {
-  background-image: linear-gradient(to bottom, #f9f9f9, #e6e6e6);
+    background-image: linear-gradient(to bottom, #f9f9f9, #e6e6e6);
 }
 
 .mod-sudden_death-submit[disabled] .mod-sudden_death-label {
-  opacity: 0;
-  transform: scale(0);
+    opacity: 0;
+    transform: scale(0);
 }
 
 .mod-sudden_death-submit[disabled] .mod-sudden_death-loading {
-  opacity: 1;
-  transform: scale(1);
+    opacity: 1;
+    transform: scale(1);
 }
 
 .mod-sudden_death-result {
-  border: 1px solid #cccccc;
-  border-radius: 4px;
-  font-size: 14px;
-  display: block;
-  height: 100px;
-  line-height: 18px;
-  margin-top: 10px;
-  outline: 0;
-  overflow: auto;
-  padding: 10px;
-  resize: none;
-  width: 300px;
+    border: 1px solid #cccccc;
+    border-radius: 4px;
+    font-size: 14px;
+    display: block;
+    height: 100px;
+    line-height: 18px;
+    margin-top: 10px;
+    outline: 0;
+    overflow: auto;
+    padding: 10px;
+    resize: none;
+    width: 300px;
 }
