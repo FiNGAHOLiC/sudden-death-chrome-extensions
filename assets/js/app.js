@@ -1,7 +1,7 @@
-;(function($, win, doc, undefined) {
+;(function ($, win, doc, undefined) {
 
-    $(function(){
-      $('.js-sudden_death').suddendeath();
+    $(function () {
+        $('.js-sudden_death').suddendeath();
     });
 
 }(jQuery, window, this.document));
