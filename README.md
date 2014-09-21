@@ -1,5 +1,5 @@
 # Sudden Death ASCII Art Generator
-Chrome Extentions for generating Sudden-Death AA (using papix's Kuso API).
+Chrome Extensions for generating Sudden-Death AA (using papix's Kuso API).
 
 ## How to install
 Under development.
