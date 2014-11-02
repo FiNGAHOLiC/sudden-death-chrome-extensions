@@ -14,7 +14,7 @@
         "default_popup": "popup.html"
     },
     "permissions": [
-        "http://kuso-api.papix.net/",
+        "https://sudden-death.herokuapp.com/",
         "clipboardWrite"
     ]
 }

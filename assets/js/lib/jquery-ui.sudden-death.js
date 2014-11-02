@@ -2,7 +2,7 @@
 
     $.widget('ui.suddendeath', {
         options: {
-            api: 'http://kuso-api.papix.net/sudden-death',
+            api: 'https://sudden-death.herokuapp.com/api/sd',
             selectorInput: '.js-sudden_death-input',
             selectorSubmit: '.js-sudden_death-submit',
             selectorResult: '.js-sudden_death-result'
@@ -18,31 +18,31 @@
             this._$input = $elem.find(o.selectorInput).trigger('focus');
             this._$submit = $elem.find(o.selectorSubmit);
             this._$result = $elem.find(o.selectorResult);
-            this._wordSearched;
+            this._textRequested;
         },
         _eventify: function () {
             this.element.on('submit', $.proxy(function (e) {
-                var word = this._$input.val();
+                var text = this._$input.val();
                 e.preventDefault();
-                if (word && word !== this._wordSearched) {
-                    this._wordSearched = word;
-                    this._setWord(word);
+                if (text && text !== this._textRequested) {
+                    this._textRequested = text;
+                    this._setText(text);
                 }
             }, this));
         },
-        _setWord: function (word) {
-            $.when(this._getAA(word), this._delay()).then($.proxy(function (res) {
+        _setText: function (text) {
+            $.when(this._getAA(text), this._delay()).then($.proxy(function (res) {
                 this._disable();
                 this._setResult(res);
             }, this), $.proxy(function () {
                 this._disable();
             }, this));
         },
-        _getAA: function (word) {
+        _getAA: function (text) {
             return $.Deferred($.proxy(function (defer) {
                 this._enable();
                 $.get(this.options.api, {
-                    word: word
+                    text: text
                 }).done($.proxy(function (res) {
                     defer.resolve(res);
                 }, this)).fail($.proxy(function (res) {
@@ -58,7 +58,7 @@
             });
         },
         _setResult: function (res) {
-            this._$result.val(res).focus().select();
+            this._$result.val(res.result).focus().select();
             $.isFunction(doc.execCommand) && doc.execCommand('copy');
         },
         _disable: function(){
